@@ -17,6 +17,8 @@ class ProfesionalVinculado {
 class ProfesionalLibre {
 	var property totalRecaudado= 0
 	var property universidad
+	
+	// TODO OJO No es necesario inicializar en #{}
 	var property provinciasDondePuedeTrabajar = #{}
 	var property honorariosPorHora
 	method cobrar(importe){totalRecaudado += importe}

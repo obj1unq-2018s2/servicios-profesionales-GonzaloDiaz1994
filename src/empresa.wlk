@@ -11,4 +11,7 @@ class EmpresaDeServicios {
 	method profesionalMasBarato() = profesionalesDeLaEmpresa.min{profesional => profesional.honorariosPorHora()}
 	method provinciaCubierta(provincia) = profesionalesDeLaEmpresa.any{profesional => profesional.provinciaDondePuedeTrabajar()}
 	method profesionalesDeUniversidad(universidad) = profesionalesDeLaEmpresa.count{profesional => profesional.universidad() == universidad}
+
+	// TODO Este nombre parece que fuera una orden, pero la implementación parece una pregunta, es inconsistente.	
 	method satisfacer(solicitante) = solicitante.puedeSerAtendido()
+}
